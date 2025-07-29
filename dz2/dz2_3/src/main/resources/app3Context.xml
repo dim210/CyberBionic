@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="DieselFuel"
+          class="org.example.beans.DieselFuel">
+        <constructor-arg value="1000"/>
+    </bean>
+
+    <bean id="CoalCargo" class="org.example.beans.CoalCargo">
+        <constructor-arg value="50000"/>
+    </bean>
+
+    <bean id="CargoItem1" class="org.example.beans.CargoItem" scope="singleton">
+        <constructor-arg name="name" value="Coal"></constructor-arg>
+        <constructor-arg name="count" value="330"></constructor-arg>
+    </bean>
+    <bean id="CargoItem2" class="org.example.beans.CargoItem" scope="singleton">
+        <constructor-arg name="name" value="Gold"></constructor-arg>
+        <constructor-arg name="count" value="111"></constructor-arg>
+    </bean>
+    <bean id="CargoItem3" class="org.example.beans.CargoItem" scope="singleton">
+        <constructor-arg name="name" value="Metall"></constructor-arg>
+        <constructor-arg name="count" value="4444"></constructor-arg>
+    </bean>
+
+    <util:map id="CargoContainer" map-class="java.util.HashMap" key-type="java.lang.String" value-type="org.example.beans.CargoItem">
+        <entry key="cargo1" value-ref="CargoItem1"/>
+        <entry key="cargo2" value-ref="CargoItem2"/>
+        <entry key="cargo3" value-ref="CargoItem3"/>
+    </util:map>
+
+    <bean id="CargoVessel" class="org.example.beans.CargoVessel" init-method="init">
+        <constructor-arg name="name" value="StMaria"/>
+        <constructor-arg name="type" value="bulcker"/>
+        <property name="cargo" ref="CoalCargo" />
+        <property name="fuel" ref="DieselFuel"/>
+        <property name="cargoCont" ref="CargoContainer"/>
+    </bean>
+
+</beans>
