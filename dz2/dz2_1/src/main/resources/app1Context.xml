@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="DieselFuel"
+          class="org.example.ex1.beans.DieselFuel">
+        <constructor-arg value="1000"/>
+    </bean>
+
+    <bean id="CoalCargo" class="org.example.ex1.beans.CoalCargo">
+        <constructor-arg value="50000"/>
+    </bean>
+
+    <bean id="CargoVessel" class="org.example.ex1.beans.CargoVessel" init-method="init">
+        <constructor-arg name="name" value="StMaria"/>
+        <constructor-arg name="type" value="bulcker"/>
+        <property name="cargo" ref="CoalCargo" />
+        <property name="fuel" ref="DieselFuel"/>
+    </bean>
+
+</beans>
