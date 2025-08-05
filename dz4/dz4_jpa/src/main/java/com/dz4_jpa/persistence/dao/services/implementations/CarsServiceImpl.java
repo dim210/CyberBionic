@@ -18,6 +18,7 @@ public class CarsServiceImpl implements CarsService {
         this.carsRepository = carsRepository;
     }
 
+
     @Override
     public List<Car> findAll() {
         return Lists.newArrayList(carsRepository.findAll());
@@ -34,23 +35,27 @@ public class CarsServiceImpl implements CarsService {
     }
 
     @Override
-    public void listAllCars() {
+    public void listAllCarsToConsole() {
         System.out.println("ListAll:\n");
         carsRepository.findAll().forEach(elem-> System.out.println(elem.toString()));
     }
 
     @Override
-    public List<Car> findCarByBrand_name(String brand_name) {
-        return carsRepository.findCarByBrand_name(brand_name);
+    public List<Car> findCarsByBrandName(String brandName) {
+        return carsRepository.findCarByBrandName(brandName);
     }
 
     @Override
-    public List<Car> findCarByBrand_nameAndModel_name(String brand_name, String model_name) {
-        return carsRepository.findCarByBrand_nameAndModel_name(brand_name,model_name);
+    public List<Car> findCarsByBrandNameAndModelName(String brandName, String modelName) {
+        return carsRepository.findCarByBrandNameAndModelName(brandName, modelName);
     }
 
     @Override
-    public List<Car> findCarsByPriceRange(Double fromCost, Double toCost) {
-        return carsRepository.getByPriceRange(fromCost,toCost);
+    public List<Car> findCarsByPriceRange(Double fromPrice, Double toPrice) {
+        return carsRepository.getByPriceRange(fromPrice,toPrice);
+    }
+    @Override
+    public void delByIdQuery(long id) {
+        carsRepository.delByIdQuery(id);
     }
 }

@@ -4,14 +4,15 @@
     <title>result (form-action)</title>
 </head>
 <body>
-received record: <b>id:</b> ${out_rec.id}, <b>text:</b> ${out_rec.text}
-<p>${mess}!</p>
-<%--<a href="form">add new row</a>--%>
+<p>${mess}</p>
+id: ${out_rec.id}, <b>${out_rec.toString()}</b>
+
 <form id="addnew-form" action="form" method="get">
-    <input type="submit" value="add new data">
+    <input type="submit" value="Back to form">
 </form>
 <form id="showall-form" action="show-all" method="get">
-    <input type="submit" value="show saved data">
+    <input type="submit" value="show all data">
 </form>
+<a href="./">go to root</a>
 </body>
 </html>

@@ -2,8 +2,8 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<!--<web-app version="3.1">&lt;!&ndash; версія специфікацїї Servlet для Tomcat 8.5&ndash;&gt;-->
-<web-app version="5.0"><!-- версія специфікацїї Servlet для Tomcat 10.0-->
+<web-app version="3.1"><!-- версія специфікацїї Servlet для Tomcat 8.5-->
+<!--<web-app version="5.0">&lt;!&ndash; версія специфікацїї Servlet для Tomcat 10.0&ndash;&gt;-->
   <display-name>Spring Data dz4</display-name>
 
   <servlet>
@@ -11,7 +11,7 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>/WEB-INF/appContextMVC.xml</param-value>
+      <param-value>/WEB-INF/appContextMVC.xml, /WEB-INF/appContextJpa.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>

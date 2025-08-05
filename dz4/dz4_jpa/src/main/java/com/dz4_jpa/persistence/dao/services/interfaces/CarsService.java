@@ -14,11 +14,13 @@ public interface CarsService {
 
     void removeCarById(long id);
 
-    void listAllCars();
+    void listAllCarsToConsole();
 
-    List<Car> findCarByBrand_name(String brand_name);
+    List<Car> findCarsByBrandName(String brandName);
 
-    List<Car> findCarByBrand_nameAndModel_name(String brand_name, String model_name);
+    List<Car> findCarsByBrandNameAndModelName(String brandName, String modelName);
 
-    List<Car> findCarsByPriceRange(@Param("pFromCost") Double fromCost, @Param("pToCost") Double toCost);
+    List<Car> findCarsByPriceRange(@Param("pFromPrice") Double fromPrice, @Param("pToPrice") Double toPrice);
+
+    void delByIdQuery(long id);
 }

@@ -2,6 +2,6 @@
 <html>
 <body>
 <h2>index!</h2>
-<a href="/dz4_jpa/task4/">go to dz4_jpa, task2,3</a>
+<a href="/dz4_jpa/task4/">go to dz4_jpa, tasks4</a>
 </body>
 </html>
