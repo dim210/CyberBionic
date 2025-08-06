@@ -19,7 +19,7 @@
     <input type="submit" value="find Cars">
 </form>
 -----
-<p>find Cars By BrandName</p>
+<p>find Cars By BrandName & ModelName</p>
 <form id="input-form" action="findByBrandNameAndModelName" method="post" modelAttribute = ${form-record}>
     <p>Brand name: <input type="text" name="fBrandName"></p>
     <p>Model name: <input type="text" name="fModelName"></p>
