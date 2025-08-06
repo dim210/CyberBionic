@@ -22,6 +22,6 @@ public interface CarsRepository extends CrudRepository<Car,Long> {
     List<Car> getByPriceRange(@Param("pFromPrice") Double fromCost, @Param("pToPrice") Double toCost);
 
     @Modifying
-    @Query("DELETE FROM Car c where c.id = :pId")
-    void delByIdQuery(@Param("pId") long id);
+    @Query(value = "DELETE FROM carsmarket c where c.id = ?1", nativeQuery = true)
+    void delByIdQuery(long id);
 }
