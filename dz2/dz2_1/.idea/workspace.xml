@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9302c76-a8f0-4a34-992d-fbe2c2b02f03" name="Changes" comment="dz2" />
+    <list default="true" id="d9302c76-a8f0-4a34-992d-fbe2c2b02f03" name="Changes" comment="dz2">
+      <change afterPath="$PROJECT_DIR$/../../dz5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/java/com/dz5/mvc/controllers/CarsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/java/com/dz5/persistence/dao/repositories/CarsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/java/com/dz5/persistence/dao/services/implementations/CarsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/java/com/dz5/persistence/dao/services/interfaces/CarsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/java/com/dz5/persistence/models/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/mysql_ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/appContextJpa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/appContextJpaTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/appContextMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/appContextMVCTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/views/form-action.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/views/root.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/views/show-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/test/java/com/dz5/mvc/controllers/CarsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dz5/src/test/java/com/dz5/persistence/dao/services/implementations/CarsServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dz3/dz3_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../dz3/dz3_2/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +101,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/dz5",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/dim210/docs/trainings/CyberBionic/git/dz2/dz2_1",
     "node.js.detected.package.eslint": "true",
